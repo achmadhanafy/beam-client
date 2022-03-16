@@ -7,6 +7,36 @@
   pointer-events: none;
 }
 
+.textPrimary{
+  color: #EB2730;
+}
+
+.formInput{
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(33, 33, 34, .5);
+}
+
+.formButton{
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.bgPrimary{
+  background-color: #EB2730;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
