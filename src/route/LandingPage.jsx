@@ -36,7 +36,7 @@ function LandingPage() {
                 <div style={{backgroundImage:`url(${eclipse})`,backgroundSize:'100vw 200px',backgroundRepeat:'no-repeat'}}>
                     <div className="w-screen pt-5 pl-5" style={{height:'200px'}}>
                         <img className="mb-5" src={beamLogo} width="92px" alt=""/>
-                        <p className="text-white text-3xl font-semibold w-4/5">Enjoy the Convenience of Beam Space Storage</p>
+                        <p className="text-white text-2xl font-semibold w-full">Enjoy the Convenience of Beam Space Storage</p>
                     </div>
 
                     <LoginMobile showRegister={handleShowRegister} showLogin={handleShowLogin} show={showLogin}/>
