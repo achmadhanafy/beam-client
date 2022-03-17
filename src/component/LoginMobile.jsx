@@ -192,7 +192,7 @@ function LoginMobile({showRegister,show,showLogin}) {
 
             <form style={{width:'95%'}} onSubmit={handleLogin} action="">
                     <label className="flex mb-2 font-semibold" htmlFor="email">Email Address <p className='textPrimary font-bold'>*</p></label>
-                    <input value={email} onChange={handleChange} className="mb-3 formInput shadow-md" type="text" name="email" id="email" placeholder="E.g name@gmail.com"/>
+                    <input value={email} onChange={handleChange} className="mb-3 formInput shadow-md" type="email" name="email" id="email" placeholder="E.g name@gmail.com"/>
                     <label className="flex mb-2 font-semibold"  htmlFor="password">Password <p className='textPrimary font-bold'>*</p></label>
                     <input value={password} onChange={handleChange} className="formInput shadow-md mb-5" type="password" name="password" id="password" placeholder="Enter your password" />
                     <button type="submit" className="text-white font-semibold bgPrimary formButton shadow-md mb-5 shadow-red-400">Login</button>
@@ -266,41 +266,7 @@ function LoginMobile({showRegister,show,showLogin}) {
              
 
         </div>
-        // <div className="flex flex-col justify-center items-center w-2/4 bg-white" style={{backgroundColor:'#FAFBFF'}}>
-        //         <div style={{width:'388px'}}>
-        //         <p className="textPrimary text-3xl font-semibold mb-8">Register Your Account</p>
-        //         <p className="text-red-400">{message}</p>
-
-                // <form onSubmit={HandleRegister} action="">
-                //     <label className="flex mb-3 font-semibold" htmlFor="fullName">Name <p className='textPrimary font-bold'>*</p></label>
-                //     <input value={fullName} onChange={handleChange} className="mb-5 formInput shadow-md" type="text" name="fullName" id="fullName" placeholder="Full Name"/>
-                //     <label className="flex mb-3 font-semibold" htmlFor="email">Email Address <p className='textPrimary font-bold'>*</p></label>
-                //     <input value={email} onChange={handleChange} className="mb-5 formInput shadow-md" type="email" name="email" id="email" placeholder="E.g name@gmail.com"/>
-                //     <label className="flex mb-3 font-semibold"  htmlFor="password">Password <p className='textPrimary font-bold'>*</p></label>
-                //     <input value={password} onChange={handleChange} className="formInput shadow-md mb-8" type="password" name="password" id="password" placeholder="Password" />
-                //     <button type="submit" className="text-white font-semibold bgPrimary formButton shadow-md mb-8 shadow-red-400">Create an account</button>
-                // </form>
-        //         </div>
-
-                // <div className="flex flex-col justify-center items-center">
-                //     <NavLink to="/forgot-password"><p className="mb-5 font-semibold" style={{color:'#00ACEE'}}>Forgot Password?</p></NavLink>
-                    
-                //     <p className="flex">Already have an account? <button id="toLogin" onClick={showLogin} > <p className="font-semibold" style={{color:'#00ACEE'}} >Log in here</p></button> </p>
-                // </div>
-                // <Modal
-                // isOpen = {showModal}
-                // contentLabel = "Success"
-                // style={customStyles}
-                // overlayClassName="Overlay"
-                // onRequestClose={handleCloseModal}
-                // >
-
-                //     <div className="text-3xl font-semibold text-green-300 flex items-center">
-                //         <img src={success} className="mr-3" width="50px" alt=""/>
-                //         Register Success</div>
-                    
-                // </Modal>
-        //     </div>
+        
     )
 }
 

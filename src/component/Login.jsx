@@ -190,7 +190,7 @@ function Login({showRegister,show,showLogin}) {
                 <p className="text-red-400 font-semibold">{message2}</p>
                 <form onSubmit={handleLogin} action="">
                     <label className="flex mb-3 font-semibold" htmlFor="email">Email Address <p className='textPrimary font-bold'>*</p></label>
-                    <input value={email} onChange={handleChange} className="mb-5 formInput shadow-md" type="text" name="email" id="email" placeholder="E.g name@gmail.com"/>
+                    <input value={email} onChange={handleChange} className="mb-5 formInput shadow-md" type="email" name="email" id="email" placeholder="E.g name@gmail.com"/>
                     <label className="flex mb-3 font-semibold"  htmlFor="password">Password <p className='textPrimary font-bold'>*</p></label>
                     <input value={password} onChange={handleChange} className="formInput shadow-md mb-8" type="password" name="password" id="password" placeholder="Enter your password" />
                     <button type="submit" className="text-white font-semibold bgPrimary formButton shadow-md mb-8 shadow-red-400">Login</button>
