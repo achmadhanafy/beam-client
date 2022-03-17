@@ -188,6 +188,8 @@ function LoginMobile({showRegister,show,showLogin}) {
             <hr className="w-1/4 ml-3"/>
             </div>
 
+            <p className="text-red-400 font-semibold">{message2}</p>
+
             <form style={{width:'95%'}} onSubmit={handleLogin} action="">
                     <label className="flex mb-2 font-semibold" htmlFor="email">Email Address <p className='textPrimary font-bold'>*</p></label>
                     <input value={email} onChange={handleChange} className="mb-3 formInput shadow-md" type="text" name="email" id="email" placeholder="E.g name@gmail.com"/>
@@ -229,6 +231,7 @@ function LoginMobile({showRegister,show,showLogin}) {
     return (
         <div className="ml-5 mt-5">
              <p className="textPrimary text-2xl font-semibold mb-3">Register Your Account</p>
+             <p className="text-red-400">{message}</p>
 
              <form style={{width:'95%'}} onSubmit={HandleRegister} action="">
                     <label className="flex mb-1 font-semibold" htmlFor="fullName">Name <p className='textPrimary font-bold'>*</p></label>
