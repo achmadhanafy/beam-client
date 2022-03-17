@@ -18,6 +18,10 @@
 
 }
 
+.webdisplay{
+  display: flex;
+}
+
 .Overlay {
   position: fixed;
   top: 0;
@@ -56,6 +60,19 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.mobiledisplay{
+  display: none;
+}
+
+@media (max-width: 40.75em){
+  .webdisplay{
+    display: none;
+  }
+  .mobiledisplay{
+    display: block;
+  }
 }
 
 @keyframes App-logo-spin {
